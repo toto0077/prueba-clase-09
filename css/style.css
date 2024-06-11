@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor {
+    width: 80%;
+    height: 600px;
+    margin: 20px auto;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: row;
+    /* flex-direction: row-reverse;me cambia la direccion en la que, no es necesario utilizarlo porque es e; que viene por defecto (row) */
+    /* justify-content: space-between;/* distribuir en partes iguales de izquierda a derecha todos los elementos */
+    /* justify-content: space-evenly; */ /* deja un margen igual al espacio entre los elementos */ 
+    justify-content: space-around;/* justifi content: alinea horizontalmente */
+    align-items: center;/* alinea verticalmente */
+}
+
+.caja {
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+}
+
+.uno {
+    background-color: aqua;
+    /* align-self: start; para separarlo del resto */
+
+}
+
+.dos {
+    background-color: blue;
+}
+
+.tres {
+    background-color: green;
+}
+
+.cuatro {
+    background-color: orange;
+}
+@media (max-width: 480px) {
+    .contenedor{
+        flex-direction: column;
+    }
+}
+
